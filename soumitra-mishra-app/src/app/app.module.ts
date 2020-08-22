@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule } from '@angular/router';
+import { EducationAndWorkComponent } from './education-and-work/education-and-work.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    EducationAndWorkComponent
   ],
   imports: [
     BrowserModule,
