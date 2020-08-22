@@ -13,20 +13,20 @@
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td align="center">Medician
+          <th align="center">Medician
             <embed width="140" height="80" src="https://www.youtube.com/embed/C_fV4mqeHKk">
-          </td>
+          </th>
           <td>
             Android, Java
           </td>
           <td>
             A one-stop portal for all your medical needs that include:
             <dl class="row">
-              <dt class="col-sm-3">Connecting with your physician</dt>
+              <dt class="col-sm-3">1. Connecting with your physician</dt>
               <dd class="col-sm-9">The user can search and book appointments with the nearby doctors available based on the category of medical issues they are facing.</dd>
-              <dt class="col-sm-3 text-truncate">Digital Prescription & Reports</dt>
+              <dt class="col-sm-3 text-truncate">2. Digital Prescription & Reports</dt>
               <dd class="col-sm-9">Scared of losing the paper-based prescription and medical reports. MediBuddy enables the Doctor as well as the patient to maintain the digital copy which remains in the app.</dd>
-              <dt class="col-sm-3">Medicine & Appointment Reminders</dt>
+              <dt class="col-sm-3">3. Medicine & Appointment Reminders</dt>
               <dd class="col-sm-9">MediBuddy allows users to set appointments reminders. Moreover, patients can set medicine reminders.</dd>
             </dl>
 
@@ -36,7 +36,7 @@
             <a href="https://github.ccs.neu.edu/am3y/Medician" target="blank">
               <i class="fab fa-github"></i><br>
             </a>
-            <a href="https://play.google.com/apps/internaltest/4699844549135371395" target="blank">
+            <a href="https://play.google.com/store/apps/details?id=com.medician" target="blank">
               <i class="fab fa-google-play"></i>
             </a>
         </tr>
@@ -78,6 +78,125 @@
             </a>
             <a href="https://drive.google.com/drive/folders/16Jh33gdI1LbCI4nFvx4-erwNEmZidB1O?usp=sharing" target="blank">
               <i class="fab fa-google-play"></i>
+            </a>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td align="center">Recipe Book
+          <img width="140" height="80" src="assets/images/recipe-book-screenshot.png">
+          </td>
+          <td>
+            Angular, HTML, CSS, Bootstrap
+          </td>
+          <td>
+            A web application for maintaining recipes and corresponding shopping list<br>
+          </td>
+          
+          <td style="font-size: x-large;">
+            <a href="https://github.com/soumitramishra/recipe-book" target="blank">
+              <i class="fab fa-github"></i><br>
+            </a>
+            <a href="http://recipebook.mishrasoumitra.com/#" target="blank">
+              <i class="fas fa-globe"></i>
+            </a>
+          </td>
+        </tr>
+
+
+        <tr>
+          <th scope="row">5</th>
+          <td>System call for unix like Operating System(XV6)
+          </td>
+          <td>
+            C, Linux, Shell Script, xv6
+          </td>
+          <td>
+            System call "getiostats" for xv6  : A unix like operating System
+            <ul>
+              <li>Given a file descriptor, getiostats gets the total number of bytes read and written on that file descriptor since it was opened.</li>
+              <li>Counts for file descriptors should be reset on “exec” </li>
+              <li>Stores the result in the user-supplied iostats structure. </li> 
+              <li>Returns 0 on success, or -1 on failure (e.g. bad file descriptor).</li>
+            </ul>
+          </td>
+          
+          <td style="font-size: x-large;">
+            <a href="https://github.com/soumitramishra/xv6_system_call" target="blank">
+              <i class="fab fa-github"></i><br>
+            </a>
+        </tr>
+
+        <tr>
+          <th scope="row">5</th>
+          <td> Enhance shell functionality for Unix Like Operating System
+          </td>
+          <td>
+            C, Linux, Shell Script, xv6
+          </td>
+          <td>
+            Add "alias" functionality and logical operators(&& and ||) to xv6 shell
+            <dl class="row">
+              <dt class="col-sm-3">1. Shell scripts.</dt>
+              <dd class="col-sm-9">If “sh” is run with a single command line argument, it should open that file and read commands from there instead of from the console.<br>
+                When reading from a script, the shell should not print “$” prompts.<br>
+                If the script file can’t be opened, the shell should exit with a non-zero status.</dd>
+              <dt class="col-sm-3 text-truncate">2. && and || operators.</dt>
+              <dd class="col-sm-9">These operators operate much like the “;” sequence operator, except the execution of the subcommand on the left is dependent on the exit status of the subcommand on the right.<br>
+                A command “foo && bar” will execute bar only if foo succeeds (exits with status 0).<br>
+                A command “foo || bar” will execute bar only if foo fails (exits with a non-zero status).
+                These operators should be added in a manner consistent with the design of existing operators in the xv6 shell</dd>
+              <dt class="col-sm-3">3. Alias </dt>
+              <dd class="col-sm-9">Alias is a shortcut for existing commands. <br>
+                It would help the users to create shorthands for long commands which are to be used frequently.<br>
+                The user can add new alias, run command using the aliases as well as update existing alias similar to linux bash shell alias command.<br>
+                For example - "alias t1=status true; done true" Now this command can be used by typing t1 and pressing enter.<br>
+                Right now, I have used fixed size([20,20]) two dimenstional arrays to store mappings from alias-name to command-name.<br>
+                Therefore it supports maximum of 20 aliases each with maximum command-name of 100 characters.<br>
+                This can be easily modified in the code by updating the MACRO MAXALIAS in sh.c file. <br>
+                For the convenience of the the user, I have added "alias -h" and "alias --help" options to display the usage of this command.</dd>
+            </dl>
+          </td>
+          
+          <td style="font-size: x-large;">
+            <a href="https://github.com/soumitramishra/enhance_xv6_shell" target="blank">
+              <i class="fab fa-github"></i><br>
+            </a>
+        </tr>
+
+        <tr>
+          <th scope="row">6</th>
+          <td>Arithmetic Calculator and Fibonacci finder in Assembly </td>
+          <td>
+            C, Assembly-Linux, Shell Script, xv6
+          </td>
+          <td>
+            Add "alias" functionality and logical operators(&& and ||) to xv6 shell
+            <dl class="row">
+              <dt class="col-sm-3">1. Shell scripts.</dt>
+              <dd class="col-sm-9">If “sh” is run with a single command line argument, it should open that file and read commands from there instead of from the console.<br>
+                
+                When reading from a script, the shell should not print “$” prompts.<br>
+                If the script file can’t be opened, the shell should exit with a non-zero status.</dd>
+              <dt class="col-sm-3 text-truncate">2. && and || operators.</dt>
+              <dd class="col-sm-9">These operators operate much like the “;” sequence operator, except the execution of the subcommand on the left is dependent on the exit status of the subcommand on the right.<br>
+                A command “foo && bar” will execute bar only if foo succeeds (exits with status 0).<br>
+                A command “foo || bar” will execute bar only if foo fails (exits with a non-zero status).
+                These operators should be added in a manner consistent with the design of existing operators in the xv6 shell</dd>
+              <dt class="col-sm-3">3. Alias </dt>
+              <dd class="col-sm-9">Alias is a shortcut for existing commands. <br>
+                It would help the users to create shorthands for long commands which are to be used frequently.<br>
+                The user can add new alias, run command using the aliases as well as update existing alias similar to linux bash shell alias command.<br>
+                For example - "alias t1=status true; done true" Now this command can be used by typing t1 and pressing enter.<br>
+                Right now, I have used fixed size([20,20]) two dimenstional arrays to store mappings from alias-name to command-name.<br>
+                Therefore it supports maximum of 20 aliases each with maximum command-name of 100 characters.<br>
+                This can be easily modified in the code by updating the MACRO MAXALIAS in sh.c file. <br>
+                For the convenience of the the user, I have added "alias -h" and "alias --help" options to display the usage of this command.</dd>
+            </dl>
+          </td>
+          
+          <td style="font-size: x-large;">
+            <a href="https://github.com/soumitramishra/Assembly-programming-amd64-and-x86" target="blank">
+              <i class="fab fa-github"></i><br>
             </a>
         </tr>
     </tbody>
