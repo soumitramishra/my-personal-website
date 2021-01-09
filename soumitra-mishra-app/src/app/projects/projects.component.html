@@ -42,9 +42,9 @@
         </tr>
         <tr>
           <th scope="row">2</th>
-          <td align="center">This Website
+          <th align="center">This Website
           <img width="140" height="80" src="assets/images/my-website-screenshot.png">
-          </td>
+          </th>
           <td>
             HTML,CSS, Angular, Bootstrap
           </td>
@@ -62,9 +62,39 @@
         </tr>
         <tr>
           <th scope="row">3</th>
-          <td align="center">Stick-em-up
-          <img width="140" height="80" src="assets/images/stick-em-up-screenshot.png">
+          <th align="center">Serverless Image Recognition on AWS</th>
+          <td>
+            Amazon Web Services(AWS), Python
           </td>
+          <td>
+            Automating the Quality Inspection tasks for a compay using Serverless Image Recognition on AWS
+            <dl class="row">
+              <dt class="col-sm-3">1. AWS Lambda </dt>
+              <dd class="col-sm-9"> Lambda functions to upload, inspect, label the images and send email report by invoking various .</dd>
+              <dt class="col-sm-3 text-truncate">2. AWS Rekogniztion</dt>
+              <dd class="col-sm-9">To analyze images and genearate automated report.</dd>
+              <dt class="col-sm-3">3. AWS API Gateway</dt>
+              <dd class="col-sm-9">To process requests from clients outside AWS.</dd>
+              <dt class="col-sm-3">4. AWS IAM </dt>
+              <dd class="col-sm-9">To assign role, policy and maintain security configuration of the application.</dd>
+              <dt class="col-sm-3">5. Amazon SNS  </dt>
+              <dd class="col-sm-9">To subscribe to an event and send e-mail notifications.</dd>
+              <dt class="col-sm-3">6. AWS S3  </dt>
+              <dd class="col-sm-9">To store and protect data.</dd>
+              <dt class="col-sm-3">7. AWS CloudWatch  </dt>
+              <dd class="col-sm-9">To monitor the use of applictions by the support team.</dd>
+            </dl>
+          </td>
+          <td style="font-size: x-large;">
+            <a href="https://github.com/soumitramishra/serverless-image-recognition-app-aws" target="blank">
+              <i class="fab fa-github"></i><br>
+            </a>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <th align="center">Stick-em-up
+          <img width="140" height="80" src="assets/images/stick-em-up-screenshot.png">
+          </th>
           <td>
             Angular, Java
           </td>
@@ -81,10 +111,10 @@
             </a>
         </tr>
         <tr>
-          <th scope="row">4</th>
-          <td align="center">Recipe Book
+          <th scope="row">5</th>
+          <th align="center">Recipe Book
           <img width="140" height="80" src="assets/images/recipe-book-screenshot.png">
-          </td>
+          </th>
           <td>
             Angular, HTML, CSS, Bootstrap
           </td>
@@ -104,9 +134,9 @@
 
 
         <tr>
-          <th scope="row">5</th>
-          <td>System call for unix like Operating System(XV6)
-          </td>
+          <th scope="row">6</th>
+          <th>System call for unix like Operating System(XV6)
+          </th>
           <td>
             C, Linux, Shell Script, xv6
           </td>
@@ -127,9 +157,9 @@
         </tr>
 
         <tr>
-          <th scope="row">5</th>
-          <td> Enhance shell functionality for Unix Like Operating System
-          </td>
+          <th scope="row">7</th>
+          <th> Enhance shell functionality for Unix Like Operating System
+          </th>
           <td>
             C, Linux, Shell Script, xv6
           </td>
@@ -164,32 +194,20 @@
         </tr>
 
         <tr>
-          <th scope="row">6</th>
-          <td>Arithmetic Calculator and Fibonacci finder in Assembly </td>
+          <th scope="row">8</th>
+          <th>Arithmetic Calculator and Fibonacci finder in Assembly </th>
           <td>
             C, Assembly-Linux, Shell Script, xv6
           </td>
           <td>
             Add "alias" functionality and logical operators(&& and ||) to xv6 shell
             <dl class="row">
-              <dt class="col-sm-3">1. Shell scripts.</dt>
-              <dd class="col-sm-9">If “sh” is run with a single command line argument, it should open that file and read commands from there instead of from the console.<br>
-                
-                When reading from a script, the shell should not print “$” prompts.<br>
-                If the script file can’t be opened, the shell should exit with a non-zero status.</dd>
-              <dt class="col-sm-3 text-truncate">2. && and || operators.</dt>
-              <dd class="col-sm-9">These operators operate much like the “;” sequence operator, except the execution of the subcommand on the left is dependent on the exit status of the subcommand on the right.<br>
-                A command “foo && bar” will execute bar only if foo succeeds (exits with status 0).<br>
-                A command “foo || bar” will execute bar only if foo fails (exits with a non-zero status).
-                These operators should be added in a manner consistent with the design of existing operators in the xv6 shell</dd>
-              <dt class="col-sm-3">3. Alias </dt>
+              <dt class="col-sm-3">1. Arithmetic Calculator</dt>
+              <dd class="col-sm-9">Recursive Fibonacci program in Assembly language for both x86 and x64 microprocessors<br>
+              <dt class="col-sm-3 text-truncate">2. Recursive Fibonacci.</dt>
               <dd class="col-sm-9">Alias is a shortcut for existing commands. <br>
-                It would help the users to create shorthands for long commands which are to be used frequently.<br>
-                The user can add new alias, run command using the aliases as well as update existing alias similar to linux bash shell alias command.<br>
-                For example - "alias t1=status true; done true" Now this command can be used by typing t1 and pressing enter.<br>
-                Right now, I have used fixed size([20,20]) two dimenstional arrays to store mappings from alias-name to command-name.<br>
-                Therefore it supports maximum of 20 aliases each with maximum command-name of 100 characters.<br>
-                This can be easily modified in the code by updating the MACRO MAXALIAS in sh.c file. <br>
+                These operators operate much like the “;” sequence operator, except the execution of the subcommand on the left, is dependent on the exit status of the subcommand on the right.
+                Recursive Fibonacci program in Assembly language for both x86 and x64 microprocessors
                 For the convenience of the the user, I have added "alias -h" and "alias --help" options to display the usage of this command.</dd>
             </dl>
           </td>
