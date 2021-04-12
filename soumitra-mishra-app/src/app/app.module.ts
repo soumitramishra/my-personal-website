@@ -9,12 +9,14 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule } from '@angular/router';
 import { EducationAndWorkComponent } from './education-and-work/education-and-work.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'projects', component: ProjectsComponent},
-  {path: 'contact', component: ContactComponent}
+  {path: 'contact', component: ContactComponent},
+  {path: 'experience', component: ExperienceComponent}
 ]
 
 @NgModule({
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    EducationAndWorkComponent
+    EducationAndWorkComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

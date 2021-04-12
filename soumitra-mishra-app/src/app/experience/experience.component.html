@@ -1,0 +1,30 @@
+<h1 style="font-size: 80px;">Experience</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Job Title</th>
+          <th scope="col">Company/Organization</th>
+          <th scope="col">Location</th>
+          <th scope="col">Description</th>
+          <th scope="col">Period</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr *ngFor='let experience of list_of_experience; index as i'>
+            <td>{{i+1}}</td>
+            <td>{{experience.title}}</td>
+            <td>{{experience.company}}</td>
+            <td>{{experience.location}}</td>
+            <td><button class="btn btn-link" (click)="company=experience.company;description=experience.description;title=experience.title">Click here to view details</button></td>
+            <td>Mar 2021-Present</td>
+        </tr>
+    </tbody>
+</table>
+<div *ngIf='company'>
+    <h2>{{company}}-{{title}}</h2>
+    <ul *ngFor='let point of description'>
+        <li>{{point}}</li>
+    </ul>
+</div>
+
